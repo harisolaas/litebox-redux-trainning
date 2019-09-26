@@ -1,3 +1,7 @@
+body {
+  color: white;
+  background-color: #764abcff;
+}
 .App {
   text-align: center;
 }
@@ -30,4 +34,52 @@
   to {
     transform: rotate(360deg);
   }
+}
+.FiltersContainer {
+  height: 50px;
+}
+.Filter {
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.Filter.Active {
+  color: #764abcff;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.TodosContainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-flow: column;
+}
+.TodoCard {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid white;
+  width: 400px;
+  min-height: 150px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.Completed {
+  background-color: #fff2;
+}
+.InputContainer {
+  display: flex;
+  flex-flow: column;
+}
+textarea {
+  width: 200px;
+  align-self: center;
+}
+.AddButton {
+  font-weight: bold;
+  text-decoration: underline;
+  margin: 20px 0 30px;
 }
